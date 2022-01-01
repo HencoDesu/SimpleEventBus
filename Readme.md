@@ -5,7 +5,7 @@ Simple implementation for
 ## Define own events
 Events are just an objects inherited from ```Event``` class.
 ```CSharp
-sing HencoDesu.SimpleEventBus.Events;
+using HencoDesu.SimpleEventBus.Events;
 
 namespace MyGreatNamespace;
 
