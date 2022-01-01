@@ -5,5 +5,5 @@ namespace HencoDesu.EventBus;
 public interface IEventBus
 {
 	TEvent GetEvent<TEvent>() 
-		where TEvent : IEvent;
+		where TEvent : IEvent, new();
 }
