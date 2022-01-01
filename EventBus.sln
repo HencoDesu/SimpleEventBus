@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleEventBus", "src\Simpl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleEventBus.Tests", "tests\SimpleEventBus.Tests\SimpleEventBus.Tests.csproj", "{E4BB8A77-B344-46E4-B9AC-957F6F1444C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleEventBus.Reactive.Tests", "tests\SimpleEventBus.Reactive.Tests\SimpleEventBus.Reactive.Tests.csproj", "{49A779CB-BC94-443D-B7BB-4E7F19318974}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleEventBus.Reactive", "src\SimpleEventBus.Reactive\SimpleEventBus.Reactive.csproj", "{5CDBF7A9-8A6B-446D-AE33-D3A65A813748}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{E4BB8A77-B344-46E4-B9AC-957F6F1444C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4BB8A77-B344-46E4-B9AC-957F6F1444C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4BB8A77-B344-46E4-B9AC-957F6F1444C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A779CB-BC94-443D-B7BB-4E7F19318974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A779CB-BC94-443D-B7BB-4E7F19318974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A779CB-BC94-443D-B7BB-4E7F19318974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A779CB-BC94-443D-B7BB-4E7F19318974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CDBF7A9-8A6B-446D-AE33-D3A65A813748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDBF7A9-8A6B-446D-AE33-D3A65A813748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDBF7A9-8A6B-446D-AE33-D3A65A813748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDBF7A9-8A6B-446D-AE33-D3A65A813748}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
