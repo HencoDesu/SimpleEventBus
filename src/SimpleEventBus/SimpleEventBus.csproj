@@ -7,14 +7,15 @@
         <AssemblyName>HencoDesu.SimpleEventBus</AssemblyName>
         <RootNamespace>HencoDesu.SimpleEventBus</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>0.0.1</PackageVersion>
-        <Title>HencoDesu EventBus</Title>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Title>SimpleEventBus</Title>
         <Authors>HencoDesu</Authors>
         <Description>Simple Event bus implementation</Description>
         <PackageId>HencoDesu.SimpleEventBus</PackageId>
         <Product>HencoDesu.SimpleEventBus</Product>
-        <AssemblyVersion>0.0.1</AssemblyVersion>
-        <FileVersion>0.0.1</FileVersion>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+        <RepositoryUrl>https://github.com/HencoDesu/SimpleEventBus</RepositoryUrl>
     </PropertyGroup>
 
 </Project>
