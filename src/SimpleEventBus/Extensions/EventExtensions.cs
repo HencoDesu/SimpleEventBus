@@ -1,11 +1,11 @@
-﻿using HencoDesu.EventBus.Events;
+﻿using HencoDesu.SimpleEventBus.Events;
 
-namespace HencoDesu.EventBus.Extensions;
+namespace HencoDesu.SimpleEventBus.Extensions;
 
 public static class EventExtensions
 {
 	public static void RaiseFromEventPattern(
-		this IEvent @event, 
+		this IEvent @event,
 		Action<EventHandler> subscribeAction)
 	{
 		subscribeAction((_, _) => @event.Raise());

@@ -1,4 +1,4 @@
-﻿namespace HencoDesu.EventBus.Events;
+﻿namespace HencoDesu.SimpleEventBus.Events;
 
 internal class EventSubscription : IDisposable
 {

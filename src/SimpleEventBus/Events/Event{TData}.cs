@@ -1,15 +1,15 @@
-﻿namespace HencoDesu.EventBus.Events;
+﻿namespace HencoDesu.SimpleEventBus.Events;
 
 public class Event<TData> : Event, IEvent<TData>
 {
 	private Action<TData>? _handler;
-	
+
 	public void Raise(TData data)
 	{
 		base.Raise();
 		_handler?.Invoke(data);
 	}
-	
+
 	public IDisposable Subscribe(Action<TData> handler)
 	{
 		_handler += handler;

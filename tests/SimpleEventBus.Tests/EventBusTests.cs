@@ -1,16 +1,16 @@
-using System.Threading.Tasks;
 using FluentAssertions;
-using HencoDesu.EventBus.Extensions;
+using HencoDesu.SimpleEventBus;
+using HencoDesu.SimpleEventBus.Extensions;
 using Xunit;
 
-namespace EventBus.Tests;
+namespace SimpleEventBus.Tests;
 
 public class EventBusTests
 {
 	[Fact]
 	public void GetEventTest()
 	{
-		var eventBus = new HencoDesu.EventBus.EventBus();
+		var eventBus = new EventBus();
 		var firstInstance = eventBus.GetEvent<TestEvent>();
 		var secondInstance = eventBus.GetEvent<TestEvent>();
 
@@ -20,7 +20,7 @@ public class EventBusTests
 	[Fact]
 	public void SubscribeWithoutDataTest()
 	{
-		var eventBus = new HencoDesu.EventBus.EventBus();
+		var eventBus = new HencoDesu.SimpleEventBus.EventBus();
 		var invoked = false;
 		eventBus.GetEvent<TestEvent>().Subscribe(() => invoked = true);
 		
@@ -32,7 +32,7 @@ public class EventBusTests
 	[Fact]
 	public void SubscribeWithDataTest()
 	{
-		var eventBus = new HencoDesu.EventBus.EventBus();
+		var eventBus = new HencoDesu.SimpleEventBus.EventBus();
 		const string testData = "testData";
 		var dataFromEvent = "";
 		eventBus.GetEvent<TestEvent>().Subscribe(d => dataFromEvent = d);
@@ -45,7 +45,7 @@ public class EventBusTests
 	[Fact]
 	public void SubscribeWithoutDataDisposingTest()
 	{
-		var eventBus = new HencoDesu.EventBus.EventBus();
+		var eventBus = new HencoDesu.SimpleEventBus.EventBus();
 		var invocations = 0;
 		var subscription = eventBus.GetEvent<TestEvent>().Subscribe(() => invocations++);
 		
@@ -60,7 +60,7 @@ public class EventBusTests
 	[Fact]
 	public void SubscribeWithDataDisposingTest()
 	{
-		var eventBus = new HencoDesu.EventBus.EventBus();
+		var eventBus = new HencoDesu.SimpleEventBus.EventBus();
 		var invocations = 0;
 		var subscription = eventBus.GetEvent<TestEvent>().Subscribe(_ => invocations++);
 		
@@ -76,7 +76,7 @@ public class EventBusTests
 	public void RaiseFromEventPatternExtensionTest()
 	{
 		var caller = new SomeObjectWithEvent();
-		var eventBus = new HencoDesu.EventBus.EventBus();
+		var eventBus = new HencoDesu.SimpleEventBus.EventBus();
 		var invocations = 0;
 		const string testData = "testData";
 		

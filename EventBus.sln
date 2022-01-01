@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus", "src\EventBus\EventBus.csproj", "{02AA8582-70E3-4C0C-A21A-C975C997F37C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleEventBus", "src\SimpleEventBus\SimpleEventBus.csproj", "{02AA8582-70E3-4C0C-A21A-C975C997F37C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Tests", "tests\EventBus.Tests\EventBus.Tests.csproj", "{E4BB8A77-B344-46E4-B9AC-957F6F1444C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleEventBus.Tests", "tests\SimpleEventBus.Tests\SimpleEventBus.Tests.csproj", "{E4BB8A77-B344-46E4-B9AC-957F6F1444C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

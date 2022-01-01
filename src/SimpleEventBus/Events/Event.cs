@@ -1,9 +1,9 @@
-﻿namespace HencoDesu.EventBus.Events;
+﻿namespace HencoDesu.SimpleEventBus.Events;
 
 public class Event : IEvent
 {
 	private Action? _handler;
-	
+
 	public void Raise()
 	{
 		_handler?.Invoke();

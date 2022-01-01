@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EventBus.Tests;
+namespace SimpleEventBus.Tests;
 
 public class SomeObjectWithEvent
 {

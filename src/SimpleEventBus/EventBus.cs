@@ -1,12 +1,12 @@
-﻿using HencoDesu.EventBus.Events;
+﻿using HencoDesu.SimpleEventBus.Events;
 
-namespace HencoDesu.EventBus;
+namespace HencoDesu.SimpleEventBus;
 
 public class EventBus : IEventBus
 {
 	private readonly List<IEvent> _events = new();
 
-	public TEvent GetEvent<TEvent>() 
+	public TEvent GetEvent<TEvent>()
 		where TEvent : IEvent, new()
 	{
 		var @event = _events.OfType<TEvent>().SingleOrDefault();
