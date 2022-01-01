@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>HencoDesu.EventBus</AssemblyName>
+        <RootNamespace>HencoDesu.EventBus</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>0.0.1</PackageVersion>
+        <Title>HencoDesu EventBus</Title>
+        <Authors>HencoDesu</Authors>
+        <Description>Simple Event bus implementation</Description>
+    </PropertyGroup>
+
+</Project>
