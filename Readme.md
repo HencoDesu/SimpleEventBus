@@ -2,6 +2,11 @@
 Simple implementation for 
 [Event Bus pattern](https://medium.com/elixirlabs/event-bus-implementation-s-d2854a9fafd5)
 
+|Package| Nuget                                                                                                                                          |
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------|
+|HencoDesu.SimpleEventBus| [![NuGet](https://img.shields.io/nuget/v/HencoDesu.SimpleEventBus)](https://www.nuget.org/packages/HencoDesu.SimpleEventBus)                   |
+|HencoDesu.SimpleEventBus.Reactive| [![NuGet](https://img.shields.io/nuget/v/HencoDesu.SimpleEventBus.Reactive)](https://www.nuget.org/packages/HencoDesu.SimpleEventBus.Reactive) |
+
 ## Define own events
 Events are just an objects inherited from ```Event``` class.
 ```CSharp
@@ -20,7 +25,7 @@ namespace MyGreatNamespace;
 
 public class MyGreatEventWithData : Event<MyEventDataType> {}
 ```
-Just remember that your events should have public argumentless constructor
+Just remember that your events should have public parameterless constructor
 
 ## Raising and subscribing to events
 ```CSharp
@@ -65,7 +70,8 @@ public class MyGreatClass
 ```
 
 ## Use with System.Reactive
-By installing SimpleEventBus.Reactive and use ```ReactiveEvent``` and ```ReactiveEvent<TData>``` as 
+By installing [HencoDesu.SimpleEventBus.Reactive](https://www.nuget.org/packages/HencoDesu.SimpleEventBus.Reactive/) 
+and use ```ReactiveEvent``` and ```ReactiveEvent<TData>``` as 
 base class for your events you can use all power of [System.Reactive](https://github.com/dotnet/reactive)!
 
 Also with this extension you can raise events from ```IObservable``` and listen events created without this 
@@ -77,4 +83,4 @@ eventBus.GetEvent<MyEvent>().AsObservable().Where(d => d.IsGreat).Subscribe(OnMy
 
 ## Customize behavior
 You always free to use your custom type as base type for events, just implement ```IEvent``` or ```IEvent<TData>```
-for this classes and remember that event types should have public argumentless constructor
+for this classes and remember that event types should have public parameterless constructor
